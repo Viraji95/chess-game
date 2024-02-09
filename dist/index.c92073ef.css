@@ -1,5 +1,5 @@
 body {
-  background-color: #211f1f;
+  background-color: #2f2e2e;
   justify-content: center;
   display: flex;
 }
@@ -18,9 +18,21 @@ body {
 }
 
 .square svg {
+  z-index: -9;
   width: 70px;
   height: 70px;
   margin: 5px;
+  position: relative;
+}
+
+path {
+  z-index: -10;
+  position: relative;
+}
+
+.piece {
+  z-index: 9;
+  position: relative;
 }
 
 .beige {
@@ -28,7 +40,7 @@ body {
 }
 
 .brown {
-  background-image: linear-gradient(#dc3d3d, #ff0);
+  background-image: linear-gradient(#d83b3b, #a1a13d);
 }
 
 .black {
@@ -36,7 +48,7 @@ body {
 }
 
 .white {
-  fill: #9f978d;
+  fill: #e7e4e1;
 }
 
 /*# sourceMappingURL=index.c92073ef.css.map */

@@ -1,7 +1,7 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: rgb(33, 31, 31);
+    background-color: rgb(47, 46, 46);
 }
 
 #gameboard {
@@ -21,6 +21,18 @@ body {
     height: 70px;
     width: 70px;
     margin: 5px;
+    position: relative;
+    z-index: -9;
+}
+
+path {
+    position: relative;
+    z-index: -10;
+}
+
+.piece {
+    position: relative;
+    z-index: 9;
 }
 
 .beige {
@@ -28,7 +40,7 @@ body {
 }
 
 .brown {
-    background-image: linear-gradient(rgb(220, 61, 61), yellow); 
+    background-image: linear-gradient(rgb(216, 59, 59), rgb(161, 161, 61)); 
 }
 
 .black {
@@ -36,5 +48,5 @@ body {
 }
 
 .white {
-    fill: rgb(159, 151, 141);
+    fill: rgb(231, 228, 225);
 }
