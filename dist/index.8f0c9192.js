@@ -74,7 +74,12 @@ function createBoard() {
         square.classList.add("square");
         square.innerHTML = startPiece;
         square.setAttribute("square-id", i);
-        square.classList.add("beige");
+        // square.classList.add('beige')
+        const row = Math.floor(i / width);
+        const col = i % width;
+        square.classList.add((row + col) % 2 === 0 ? "beige" : "brown");
+        if (i <= 15) square.firstChild.classList.add("black");
+        if (i >= 48) square.firstChild.classList.add("white");
         gameBoard.append(square);
     });
 }

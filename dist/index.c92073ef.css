@@ -1,5 +1,5 @@
 body {
-  background-color: #393737;
+  background-color: #211f1f;
   justify-content: center;
   display: flex;
 }
@@ -24,11 +24,19 @@ body {
 }
 
 .beige {
-  background-color: #00f;
+  background: linear-gradient(90deg, #9d3903 0%, #ce370e 0%, #482f0c 100%);
 }
 
 .brown {
-  background-color: brown;
+  background-image: linear-gradient(#dc3d3d, #ff0);
+}
+
+.black {
+  fill: #000;
+}
+
+.white {
+  fill: #9f978d;
 }
 
 /*# sourceMappingURL=index.c92073ef.css.map */

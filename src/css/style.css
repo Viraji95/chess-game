@@ -1,7 +1,7 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: rgb(57, 55, 55);
+    background-color: rgb(33, 31, 31);
 }
 
 #gameboard {
@@ -24,9 +24,17 @@ body {
 }
 
 .beige {
-    background-color: blue;
+    background: linear-gradient(90deg, rgb(157, 57, 3) 0%, rgb(206, 55, 14) 0%, rgb(72, 47, 12) 100%); 
 }
 
 .brown {
-    background-color: brown;
+    background-image: linear-gradient(rgb(220, 61, 61), yellow); 
+}
+
+.black {
+    fill: black;
+}
+
+.white {
+    fill: rgb(159, 151, 141);
 }
