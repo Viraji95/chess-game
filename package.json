@@ -1,0 +1,21 @@
+{
+  "name": "chess-game",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel --no-cache",
+    "build": "rm -rf dist && parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "jquery-ui": "^1.13.2",
+    "ui": "^0.2.4"
+  }
+}
