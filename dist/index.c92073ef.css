@@ -1,0 +1,34 @@
+body {
+  background-color: #393737;
+  justify-content: center;
+  display: flex;
+}
+
+#gameboard {
+  flex-wrap: wrap;
+  width: 640px;
+  height: 640px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+}
+
+.square svg {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+}
+
+.beige {
+  background-color: #00f;
+}
+
+.brown {
+  background-color: brown;
+}
+
+/*# sourceMappingURL=index.c92073ef.css.map */
