@@ -158,6 +158,9 @@ function checkIfValid(target) {
             ];
             if (starterRow.includes(starterId) && starterId + width * 2 === targetId || starterId + width === targetId || starterId + width - 1 === targetId && document.querySelector(`[square-id="${starterId + width - 1}"]`).firstChild || starterId + width + 1 === targetId && document.querySelector(`[square-id="${starterId + width + 1}"]`).firstChild) return true;
             break;
+        case "knight":
+            if (starterId + width * 2 + 1 === targetId || starterId + width * 2 - 1 === targetId || starterId + width - 2 === targetId || starterId + width + 2 === targetId || starterId - width * 2 + 1 === targetId || starterId - width * 2 - 1 === targetId || starterId - width - 2 === targetId || starterId - width + 2 === targetId) return true;
+            break;
     }
 }
 function changePlayer() {
