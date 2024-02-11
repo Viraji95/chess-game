@@ -195,39 +195,5 @@ function revertIds() {
     const allSquares = document.querySelectorAll(".square");
     allSquares.forEach((square, i)=>square.setAttribute("square-id", i));
 }
-function checkForWin() {
-    const kings = Array.from(document.querySelectorAll("#king"));
-    console.log(kings);
-    if (!kings.some((king1)=>king1.classList.contains("white"))) {
-        infoDisplay.innerHTML = "Black player wins!";
-        const allSquares = document.querySelectorAll(".square");
-        allSquares.forEach((square)=>square.firstChild?.setAttribute("draggable", false));
-    }
-    if (!kings.some((king1)=>king1.classList.contains("black"))) {
-        infoDisplay.innerHTML = "White player wins!";
-        const allSquares = document.querySelectorAll(".square");
-        allSquares.forEach((square)=>square.firstChild?.setAttribute("draggable", false));
-    }
-} // function checkForWin() {
- //     const kings = Array.from(document.querySelectorAll('#king'));
- //     console.log(kings);
- //     if (!kings.some(king => king.firstChild.classList.contains('white'))) {
- //         infoDisplay.innerHTML = "Black player wins!";
- //         disableDraggable();
- //     }
- //     if (!kings.some(king => king.firstChild && king.firstChild.classList.contains('white'))) {
- //         infoDisplay.innerHTML = "White player wins!";
- //         disableDraggable();
- //     }
- // }
- // function disableDraggable() {
- //     const allSquares = document.querySelectorAll('.square');
- //     allSquares.forEach(square => {
- //         const firstChild = square.firstChild;
- //         if (firstChild) {
- //             firstChild.setAttribute('draggable', false);
- //         }
- //     });
- // }
 
 //# sourceMappingURL=index.8f0c9192.js.map
